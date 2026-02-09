@@ -16,5 +16,11 @@ jobs:
     steps:
       - name: Print Hello
         run: echo "hello"
+  say-installing-amplify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Installing amplify cli
+        run: npm install -g @aws-amplify/cli
+        run: echo "installed"
       
 
