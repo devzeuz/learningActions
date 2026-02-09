@@ -9,6 +9,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "hello"
       - run: npm install -g bats
       - run: bats -v
 
